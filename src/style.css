@@ -1,12 +1,24 @@
+
+html {
+    background-color: black;
+
+}
+
 body {
+    width: 700px;
     background-color: gray;
-    border: 3px solid green;
+    border: 5px solid green;
     padding: 10px 20px;
-    display: inline-block
+    margin: 0 auto;
+
  }
 
 h1{
     color:rebeccapurple;
+    margin: 0;
+    padding: 20px 0;
+    text-align: center;
+
 }
 h3{
     color:white;
@@ -21,7 +33,6 @@ h3{
 }
 #encodeButton{
   cursor: pointer; 
-  display: inline-block;
   padding: 10px 20px;
   font-size: 15px;
   text-align: center;
@@ -35,16 +46,24 @@ h3{
 }
 #encodeButton:hover {background-color: black}
 
-.flex-container {
-    display: flex;
-    background-color:grey;
-}
-
-.flex-container >div {
-    background-color: blue;
-    margin: 20px;
+#decodeButton { 
+    cursor: pointer; 
     padding: 10px 20px;
-    font-size: 30px;
+    font-size: 15px;
+    text-align: center;
     text-decoration: none;
+    outline: none;
+    color: white;
+    background-color: green;
+    border: none;
+    border-radius: 15px; 
+  }
+  #decodeButton:hover {background-color: black}
+
+#displacement {
+ border:none;
+ border-radius: 15px;
+ cursor: pointer;
 
 }
+
