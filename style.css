@@ -1,0 +1,69 @@
+
+html {
+    background-color: black;
+
+}
+
+body {
+    width: 700px;
+    background-color: gray;
+    border: 5px solid green;
+    padding: 10px 30px;
+    margin: 0 auto;
+
+ }
+
+h1{
+    color:rebeccapurple;
+    margin: 0;
+    padding: 20px 0;
+    text-align: center;
+
+}
+h3{
+    color:white;
+    text-shadow: 5px 
+}
+
+#messageInitial {
+    height: 100px;
+
+    
+}
+#codedMessage {
+    height: 100px;
+
+}
+#encodeButton{
+  cursor: pointer; 
+  padding: 10px 20px;
+  font-size: 15px;
+  text-align: center;
+  color: white;
+  background-color: green;
+  border: none;
+  border-radius: 15px; 
+
+}
+#encodeButton:hover {background-color: black}
+
+#decodeButton { 
+    cursor: pointer; 
+    padding: 10px 20px;
+    font-size: 15px;
+    text-align: center;
+    color: white;
+    background-color: green;
+    border: none;
+    border-radius: 15px; 
+  }
+  #decodeButton:hover {background-color: black}
+
+#displacement {
+ border:none;
+ border-radius: 15px;
+ cursor: pointer;
+ text-align: center;
+
+}
+
