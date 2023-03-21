@@ -1,0 +1,50 @@
+body {
+    background-color: gray;
+    border: 3px solid green;
+    padding: 10px 20px;
+    display: inline-block
+ }
+
+h1{
+    color:rebeccapurple;
+}
+h3{
+    color:white;
+    text-shadow: 5px 
+}
+
+#messageInitial {
+    height: 100px;
+}
+#codedMessage {
+    height: 100px;
+}
+#encodeButton{
+  cursor: pointer; 
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 15px;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: white;
+  background-color: green;
+  border: none;
+  border-radius: 15px; 
+
+}
+#encodeButton:hover {background-color: black}
+
+.flex-container {
+    display: flex;
+    background-color:grey;
+}
+
+.flex-container >div {
+    background-color: blue;
+    margin: 20px;
+    padding: 10px 20px;
+    font-size: 30px;
+    text-decoration: none;
+
+}
