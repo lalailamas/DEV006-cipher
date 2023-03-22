@@ -4,10 +4,9 @@
 
 const cipher = {
   encode: (displacement, messageInitial) => {
-    const displacementValue = displacement;
-    const messageValue= messageInitial;
+    const displacementValue = displacement.value;
+    const messageValue= messageInitial.value;
     let codedMessage= "";
-
 
     //bucle
     for (let i= 0; i < messageValue.length; i++) {
@@ -19,17 +18,20 @@ console.log(asciiNumber);
        codedMessage += String.fromCharCode(asciiTextMay);
       } 
       //condicional para numeros entre 97 y 122 (letras en minúscula)
-      else {(asciiNumber >= 97 && asciiNumber <=122) 
-        const asciiTextMin= (((asciiNumber - 97 + parseInt (displacementValue))%26)+97);
+      else {(asciiNumber >= 97 && asciiNumber <=122);
+        const asciiTextMin= (((asciiNumber - 97 + parseInt(displacementValue))%26)+97);
         codedMessage += String.fromCharCode (asciiTextMin);
       }
+      //condicional para espacios
+      //if (messageValue == 32);
+      //return true;
+
 console.log(codedMessage);
-
-
      }
      return codedMessage; 
  }
 
 }
+
 
   export default cipher;

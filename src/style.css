@@ -1,45 +1,49 @@
 
 html {
-    background-color: black;
+    background-color: #66617A;
 
 }
 
 body {
     width: 700px;
-    background-color: gray;
-    border: 5px solid green;
-    padding: 10px 20px;
+    background-color: #4A3C7A;
+    border: 5px solid #7761C7;
+    padding: 10px 30px;
     margin: 0 auto;
 
  }
 
 h1{
-    color:rebeccapurple;
+    color:#D2C6FB;
     margin: 0;
     padding: 20px 0;
     text-align: center;
 
 }
 h3{
-    color:white;
+    color:#967AFA;
     text-shadow: 5px 
 }
 
+h5 {
+    color: #D2C6FB;
+}
 #messageInitial {
     height: 100px;
+
+    
 }
 #codedMessage {
     height: 100px;
+
 }
 #encodeButton{
   cursor: pointer; 
   padding: 10px 20px;
   font-size: 15px;
   text-align: center;
-  text-decoration: none;
-  outline: none;
-  color: white;
-  background-color: green;
+  color: #D2C6FB;
+  background-color: #66617A;
   border: none;
   border-radius: 15px; 
 
@@ -51,10 +55,8 @@ h3{
     padding: 10px 20px;
     font-size: 15px;
     text-align: center;
-    text-decoration: none;
-    outline: none;
-    color: white;
-    background-color: green;
+    color: #D2C6FB;
+    background-color: #66617A;
     border: none;
     border-radius: 15px; 
   }
@@ -64,6 +66,13 @@ h3{
  border:none;
  border-radius: 15px;
  cursor: pointer;
+ text-align: center;
 
 }
 
+#footer {
+    color:black;
+    font-style: oblique;
+    text-align:right;
+   
+}
