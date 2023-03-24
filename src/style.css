@@ -1,6 +1,7 @@
 
 html {
     background-color: #66617A;
+    font-family:Arial, Helvetica, sans-serif;
 
 }
 
@@ -22,21 +23,22 @@ h1{
 }
 h3{
     color:#967AFA;
-    text-shadow: 5px 
+    text-shadow: 5px; 
 }
 
 h5 {
     color: #D2C6FB;
+    text-shadow: 5px; 
+}
+#offset {
+    color: #D2C6FB;
+    text-align: center;
 }
 #messageInitial {
-    height: 100px;
-
-    
+    height: 150px; 
+    width: 700px;
 }
-#codedMessage {
-    height: 100px;
 
-}
 #encodeButton{
   cursor: pointer; 
   padding: 10px 20px;
@@ -67,6 +69,11 @@ h5 {
  border-radius: 15px;
  cursor: pointer;
  text-align: center;
+ position: relative;
+ top: -40px;
+ left: 150px;
+
+
 
 }
 
@@ -74,5 +81,6 @@ h5 {
     color:black;
     font-style: oblique;
     text-align:right;
+    font-size: small;
    
 }
