@@ -1,29 +1,38 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-      <h1>Este es tu lugar seguro</h1>
-      <h3>En este espacio anónimo y privado podrás desahogarte libremente y sin sentirte juzgada para poder contarnos qué es lo que te inquieta </h3>
-      <h5>No te preocupes, tu mensaje se escriptará cuando presiones el botón para cifrar</h5>
-      
-      <textarea id="messageInitial" placeholder="Desahogate aquí..."></textarea> 
 
-<h5 id="offset">Agrégale un número de desplazamiento</h5>
-<input id="displacement" type="number" min="1" max="10" placeholder="0"> 
-<br>
-      <button id="encodeButton" type="button" >Cifrar mensaje</button>
-      <button id="decodeButton" type="button" >Descrifrar mensaje</button>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-    <footer id= "footer" class="footer">Desarrollado por Alejandra Córdoba P.</footer>
-    <script src="index.js" type="module"></script>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <title>Caesar Cipher</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <h1>Este es tu lugar seguro</h1>
+  <br>
+  <h3>En este espacio anónimo y privado podrás desahogarte libremente y sin sentirte juzgada para poder contarnos qué es
+    lo que te inquieta </h3>
+  <br>
+  <div>
+    <textarea id="messageInitial" placeholder="Desahógate aquí..."></textarea>
+    <div>
+    <h5 id="offset">Escoge cuál será tu número de desplazamiento</h5>
+    <input id="displacement" type="number" min="1" max="10" placeholder="0">
+  </div>
+  </div>
+  <h5>No te preocupes, tu mensaje se escriptará cuando presiones el botón para cifrar</h5>
+  <br>
+  <button id="encodeButton" type="button" class="buttons">Cifrar</button>
+  <button id="decodeButton" type="button" class="buttons">Descrifrar</button>
+  <button id="sendButton" type="button" class="buttons">Enviar mensaje</button>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <footer id="footer" class="footer">Desarrollado por Alejandra Córdoba P.</footer>
+  <script src="index.js" type="module"></script>
+</body>
+
 </html>

@@ -1,86 +1,77 @@
-
 html {
-    background-color: #66617A;
-    font-family:Arial, Helvetica, sans-serif;
+    background-color: #4A3C7A;
+    font-family: Arial, Helvetica, sans-serif;
 
 }
 
 body {
     width: 700px;
-    background-color: #4A3C7A;
+    background-color: #605b74b9;
+    /*background-color: #4A3C7A;*/
     border: 5px solid #7761C7;
     padding: 10px 30px;
     margin: 0 auto;
+    background-image: url(../images/silueta.png);
+}
 
- }
-
-h1{
-    color:#D2C6FB;
-    margin: 0;
-    padding: 20px 0;
+h1 {
+    color: #D2C6FB;
+    margin: -30px;
+    padding: 30px 0;
     text-align: center;
+    text-shadow: 10px;
 
 }
-h3{
-    color:#967AFA;
-    text-shadow: 5px; 
+
+h3 {
+    color: #967AFA;
+    text-shadow: 10px;
 }
 
 h5 {
     color: #D2C6FB;
-    text-shadow: 5px; 
+    text-shadow: 10px;
 }
-#offset {
-    color: #D2C6FB;
-    text-align: center;
-}
+
 #messageInitial {
-    height: 150px; 
-    width: 700px;
+    height: 150px;
+    width: 500px;
 }
 
-#encodeButton{
-  cursor: pointer; 
-  padding: 10px 20px;
-  font-size: 15px;
-  text-align: center;
-  color: #D2C6FB;
-  background-color: #66617A;
-  border: none;
-  border-radius: 15px; 
-
+#offset {
+    /*Texto "Escoge cuál será tu número de desplazamiento*/
+    color: #D2C6FB;
+    text-align: right;
+    text-shadow: 10px;
 }
-#encodeButton:hover {background-color: black}
+#displacement {
+    border: none;
+    border-radius: 80px;
+    text-align: center;
+    font-size: 20px;
+    vertical-align: baseline
+}
+#footer {
+    color: black;
+    font-style: oblique;
+    text-align: right;
+    font-size: small;
+}
+div {
+    display: flex;
+    gap: 16px;
+}
 
-#decodeButton { 
-    cursor: pointer; 
+.buttons {
+    cursor: pointer;
     padding: 10px 20px;
     font-size: 15px;
     text-align: center;
     color: #D2C6FB;
-    background-color: #66617A;
+    background-color: #4A3C7A;
     border: none;
-    border-radius: 15px; 
-  }
-  #decodeButton:hover {background-color: black}
-
-#displacement {
- border:none;
- border-radius: 15px;
- cursor: pointer;
- text-align: center;
- position: relative;
- top: -40px;
- left: 150px;
-
-
-
+    border-radius: 15px;
 }
-
-#footer {
-    color:black;
-    font-style: oblique;
-    text-align:right;
-    font-size: small;
-   
+.buttons:hover {
+    background-color: black;
 }
