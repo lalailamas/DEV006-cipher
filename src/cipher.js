@@ -6,8 +6,15 @@ const cipher = {
   encode: (displacement, messageInitial) => {
     const displacementValue = displacement;
     const messageValue = messageInitial;
-    let codedMessage = "";
 
+    const displacement1 = displacement;
+    console.log("displacement1");
+    const messageInitial1 = messageInitial;
+
+    if (displacement1 !== "number" || messageInitial1 !== "string") {
+      throw TypeError("Ingresa un número de desplazamiento y escribe tu mensaje en el recuadro");
+    }
+    let codedMessage = "";
     //bucle
     for (let i = 0; i < messageValue.length; i++) {
       //charCodeAt devuelve el numero indicando el valor del caracter
@@ -28,6 +35,7 @@ const cipher = {
       } else {
         codedMessage += String[i];
       }
+
       //console.log(codedMessage);
     }
     return codedMessage;
