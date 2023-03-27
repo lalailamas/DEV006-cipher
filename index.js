@@ -1,15 +1,24 @@
 import cipher from './cipher.js';
 //aca se escuchan eventos del DOM, invocar cipher.encode ()
-//console.log(cipher);
 
-const displacement = document.getElementById ("displacement");
-const messageInitial = document.getElementById ("messageInitial");
-const codedMessage = document.getElementById ("codedMessage");
 
-const encodeButton = document.getElementById ("encodeButton");
+const displacement = document.getElementById("displacement");
+const messageInitial = document.getElementById("messageInitial");
+const encodeButton = document.getElementById("encodeButton");
+const decodedButton = document.getElementById("decodeButton");
+
 encodeButton.addEventListener("click", function () {
-  codedMessage.innerText= cipher.encode (displacement, messageInitial);
-})
+  const codedMessage = cipher.encode(displacement.value, messageInitial.value);
+  messageInitial.value = codedMessage;
 
- 
+});
 
+decodedButton.addEventListener("click", function () {
+  const decodedMessage = cipher.decode(displacement.value, messageInitial.value);
+  messageInitial.value = decodedMessage;
+});
+
+const sendButton = document.getElementById("sendButton");
+sendButton.addEventListener("click", function () {
+  alert("Tu mensaje ha sido enviado, lo estamos procesando para subir al mural web");
+});
