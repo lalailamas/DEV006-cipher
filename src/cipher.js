@@ -4,22 +4,20 @@
 
 const cipher = {
   encode: (displacement, messageInitial) => {
-    const displacementValue = displacement;
     const messageValue = messageInitial;
+    const displacementValue = displacement;
 
-    const displacement1 = displacement;
-    console.log("displacement1");
-    const messageInitial1 = messageInitial;
-
-    if (displacement1 !== "number" || messageInitial1 !== "string") {
+    if (displacement !== Number || messageInitial !== String) {
       throw TypeError("Ingresa un número de desplazamiento y escribe tu mensaje en el recuadro");
     }
     let codedMessage = "";
+
     //bucle
     for (let i = 0; i < messageValue.length; i++) {
       //charCodeAt devuelve el numero indicando el valor del caracter
       const asciiNumber = messageValue[i].charCodeAt();
       //console.log(asciiNumber);
+
       //condicional para numeros entre 65 y 90 (letras en mayuscula)
       if (asciiNumber >= 65 && asciiNumber <= 90) {
         const asciiTextMay = (((asciiNumber - 65 + parseInt(displacementValue)) % 26) + 65);
@@ -35,7 +33,6 @@ const cipher = {
       } else {
         codedMessage += String[i];
       }
-
       //console.log(codedMessage);
     }
     return codedMessage;
@@ -61,7 +58,6 @@ const cipher = {
         decodedMessage += String[i];
       }
       //console.log(decodedMessage);
-
     }
     return decodedMessage;
   }
